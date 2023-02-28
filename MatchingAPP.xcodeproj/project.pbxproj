@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1835BF2429AD24B100E80F60 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1835BF2329AD24B100E80F60 /* CardViewModel.swift */; };
+		1835BF2629AD24D800E80F60 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1835BF2529AD24D800E80F60 /* Card.swift */; };
+		1835BF2B29AD40A500E80F60 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1835BF2A29AD40A500E80F60 /* CardCollectionViewCell.swift */; };
 		18A548CB29ACF7AF00876ECB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A548CA29ACF7AF00876ECB /* AppDelegate.swift */; };
 		18A548CD29ACF7AF00876ECB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A548CC29ACF7AF00876ECB /* SceneDelegate.swift */; };
 		18A548CF29ACF7AF00876ECB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A548CE29ACF7AF00876ECB /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1835BF2329AD24B100E80F60 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		1835BF2529AD24D800E80F60 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		1835BF2A29AD40A500E80F60 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
 		18A548C729ACF7AF00876ECB /* MatchingAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatchingAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A548CA29ACF7AF00876ECB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18A548CC29ACF7AF00876ECB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +43,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1835BF2029AD23AC00E80F60 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1835BF2529AD24D800E80F60 /* Card.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1835BF2229AD23C800E80F60 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1835BF2329AD24B100E80F60 /* CardViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1835BF2929AD408800E80F60 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1835BF2A29AD40A500E80F60 /* CardCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		18A548BE29ACF7AF00876ECB = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +86,26 @@
 		18A548C929ACF7AF00876ECB /* MatchingAPP */ = {
 			isa = PBXGroup;
 			children = (
+				1835BF2929AD408800E80F60 /* Views */,
+				1835BF2029AD23AC00E80F60 /* Model */,
+				1835BF2229AD23C800E80F60 /* ViewModel */,
+				18A548DE29ACF99B00876ECB /* ViewController */,
 				18A548CA29ACF7AF00876ECB /* AppDelegate.swift */,
 				18A548CC29ACF7AF00876ECB /* SceneDelegate.swift */,
-				18A548CE29ACF7AF00876ECB /* ViewController.swift */,
 				18A548D029ACF7AF00876ECB /* Main.storyboard */,
 				18A548D329ACF7B100876ECB /* Assets.xcassets */,
 				18A548D529ACF7B100876ECB /* LaunchScreen.storyboard */,
 				18A548D829ACF7B100876ECB /* Info.plist */,
 			);
 			path = MatchingAPP;
+			sourceTree = "<group>";
+		};
+		18A548DE29ACF99B00876ECB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18A548CE29ACF7AF00876ECB /* ViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +179,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1835BF2429AD24B100E80F60 /* CardViewModel.swift in Sources */,
 				18A548CF29ACF7AF00876ECB /* ViewController.swift in Sources */,
+				1835BF2629AD24D800E80F60 /* Card.swift in Sources */,
 				18A548CB29ACF7AF00876ECB /* AppDelegate.swift in Sources */,
+				1835BF2B29AD40A500E80F60 /* CardCollectionViewCell.swift in Sources */,
 				18A548CD29ACF7AF00876ECB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,8 +337,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -321,8 +364,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
